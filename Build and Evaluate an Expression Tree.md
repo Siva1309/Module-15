@@ -1,35 +1,33 @@
-# Experiment 9(c): Expression Tree – Inorder and Postorder Traversal
+
+# Experiment 9(d): Heap Tree
 
 ## Aim
-To write a Python program to build the following expression tree and print the inorder and postorder traversal.
-
+To write a Python program to build a heap tree using appropriate Python package and function.
 
 ---
 
 ## Algorithm
 
-1. Begin the program.
-2. Import the necessary modules (`build`, `Node`) from the `binarytree` package.
-3. Define a list `x` representing the binary tree in pre-order format.
-4. Use the `build()` function to construct the expression tree from the list.
-5. Print the inorder traversal of the expression tree using `.inorder`.
-6. Print the postorder traversal of the expression tree using `.postorder`.
-7. End the program.
+1. Start the program.
+2. Import the `heapq` module.
+3. Define a function `heaptree()` that takes a list `H` as input.
+4. Use `heapq.heapify(H)` to convert the list into a valid heap (min-heap).
+5. Print the created heap.
+6. End the program.
 
 ---
 
 ## Program
 
 ```
-from binarytree import build
-x=['*','+','-',9,3,8,4]
-tree=build(x)
-print(tree.inorder)
-print(tree.postorder)
+import heapq
+def heaptree(H):
+    heapq.heapify(H)
+    print("The created Heap is",H)
 ```
 
 ## OUTPUT
-![Screenshot (265)](https://github.com/user-attachments/assets/0263bd1c-4502-4f86-8f2b-9875b150c1a8)
+![Screenshot (266)](https://github.com/user-attachments/assets/12455d80-6b17-4bc8-90af-aeaf25468319)
 
 ## RESULT
 Thus the python program was initialised and executed successfully.
